@@ -16,7 +16,7 @@ variables:
 
   ##Marco Newtonsoft Json
   Pack1Version: '1.0.0'
-  Pack1PushToNuget: True
+  Pack1PushToNuget: False
 
 steps:
 # Install NuGet Tool
@@ -50,7 +50,7 @@ steps:
   inputs:
     command: publish
     publishWebProjects: False
-    projects: '**/**/Marco.*.*.csproj'
+    projects: '**/**/Marco.Newtonsoft.Json.*.csproj'
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: False
 
