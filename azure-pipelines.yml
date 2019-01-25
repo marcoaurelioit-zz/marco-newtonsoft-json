@@ -50,7 +50,7 @@ steps:
   inputs:
     command: publish
     publishWebProjects: False
-    projects: '**/**/Marco.Newtonsoft.Json.*.csproj'
+    projects: '**/**/Marco.*.csproj'
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: False
 
